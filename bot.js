@@ -3,6 +3,7 @@ require("dotenv").config();
 const { Telegraf } = require("telegraf");
 const axios = require("axios");
 const sqlite3 = require("sqlite3").verbose();
+const express = require("express");
 
 // Initialize database
 const db = new sqlite3.Database("./books.db", (err) => {
@@ -491,4 +492,13 @@ bot.command("myrecs", (ctx) => {
 });
 
 // Start the bot
-bot.launch();
+bot.launch().then(() => {
+  console.log("Bot is running....");
+});
+
+const app = express();
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
