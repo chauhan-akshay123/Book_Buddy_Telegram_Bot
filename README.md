@@ -104,6 +104,10 @@ The bot uses an SQLite database with four main tables:
 - user_id: Integer
 - query: Text
 - searched_at: timestamp
+
+## Database ER Diagram
+
+<img align="right"  alt="Coding"  width="600" src="Book_buddy_DB.png">
                                  |
 ## **Deployment on Render**
 
