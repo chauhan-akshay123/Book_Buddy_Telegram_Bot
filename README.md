@@ -56,52 +56,52 @@ The bot uses an SQLite database with four main tables:
 - Stores user details such as username, first and last names, and the date they joined
 - Connected to liked_books, myrecs, and search_history (One-to-Many).
 
- id: Integer
- username: text
- first_name: text
- last_name: text
- joined_at: timestamp
+- id: Integer
+- username: text
+- first_name: text
+- last_name: text
+- joined_at: timestamp
 
 ### **liked_books Table**
 - racks books that users have liked, including title, author, and genre.
 - Connected to users via user_id (Many-to-One).
 
- id: Integer
- user_id: Integer
- title: text
- author: text
- genre: text
+- id: Integer
+- user_id: Integer
+- title: text
+- author: text
+- genre: text
 
 ### **myrecs Table**
 - Stores books recommended to users based on their liked books and search history.
 - Connected to users via user_id (Many-to-One).
 
- id: Integer
- user_id: Integer
- title: text
- author: text
- genre: text
- link: text
- recommended_at: timestamp
+- id: Integer
+- user_id: Integer
+- title: text
+- author: text
+- genre: text
+- link: text
+- recommended_at: timestamp
 
 ### **Recommedations Table**
 - Stores books recommended by one user (from_user) to another user (to_user) with a message.
 - Connected to users via from_user and to_user (Many-to-Many).
 
- id: Integer
- from_user: Integer
- to_user: Integer
- book_title: Text
- message: Text
+- id: Integer
+- from_user: Integer
+- to_user: Integer
+- book_title: Text
+- message: Text
 
 ### **Search History Table**
 - Logs past searches made by users, storing the search query and timestamp.
 - Connected to users via user_id (Many-to-One).
 
- id: Integer
- user_id: Integer
- query: Text
- searched_at: timestamp
+- id: Integer
+- user_id: Integer
+- query: Text
+- searched_at: timestamp
                                  |
 ## **Deployment on Render**
 
