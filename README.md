@@ -107,7 +107,7 @@ The bot uses an SQLite database with four main tables:
 
 ## Database ER Diagram
 
-<img align="right"  alt="Coding"  width="600" src="Book_buddy_DB.png">
+![Book Buddy Database ER Diagram](Book_buddy_DB.png)
                                  |
 ## **Deployment on Render**
 
