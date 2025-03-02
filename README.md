@@ -1,4 +1,4 @@
-# **Book Bbuddy Telegram Bot**
+# **Book Buddy Telegram Bot**
 
 A Telegram bot that allows users to search for books, like their favorites, receive personalized recommendations, track search history, and share book suggestions with friends.
 
