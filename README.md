@@ -4,6 +4,8 @@ A Telegram bot that allows users to search for books, like their favorites, rece
 
 ### Check out this BOT -> `https://t.me/book_buddy7_bot`
 
+![Book Buddy](ss.png)
+
 ## **Features**
 
 - **Book Search**: Search for books by title, author, or keywords using Google Books API.  
